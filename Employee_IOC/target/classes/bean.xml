@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+      <context:annotation-config/>
+  <context:component-scan base-package="com.baeldung.applicationcontext"/>
+
+<bean id="Emp" class="com.evo.Employee_IOC.EmpployeeSetter">
+<property name="name" value="shabaz"/>
+<property name="id" value="1"/>
+</bean>
+
+<bean id="Emp1" class="com.evo.Employee_IOC.EmpployeeSetter">
+<property name="name" value="sheik shabaz"/>
+<property name="id" value="2"/>
+</bean>
+
+<bean id="Emp2" class="com.evo.Employee_IOC.EmpployeeSetter">
+<property name="name" value="sheik shabaz hussain"/>
+<property name="id" value="3"/>
+</bean>
+<!-- 
+ 
+<bean id="Emp3" class="com.evo.Employee_IOC.EmpployeeSetter">  
+<property name="name" value="shabazhussaim"></property>  
+<property name="id" value="8"></property>  
+<property name="detail">
+            <map>
+                <entry key="Struts"
+                    value="Struts is an open source framework used to develop Java MVC based web applications."></entry>
+                <entry key="Spring"
+                    value="Spring is an application framework used to develop Java Enterprise applications
+                           and designed on concept called Dependency injection."></entry>
+                <entry key="Hibernate"
+                    value="Hibernate is an object-relational mapping (ORM) framework that works with relational
+                           databases to manage the data."></entry>
+            </map>
+        </property>
+        </bean>  
+ -->
+
+</beans>
+    
