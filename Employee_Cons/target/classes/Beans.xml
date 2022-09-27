@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+      <context:annotation-config/>
+  <context:component-scan base-package="com.baeldung.applicationcontext"/>
+  
+  <bean id="Emp" class="com.evo.Employee_Cons.EmployeeCons">
+  <constructor-arg name="name" value="shabaz"/>
+  <constructor-arg name="id" value="123"/>
+  </bean>
+  
+  <bean id="Emp1" class="com.evo.Employee_Cons.EmployeeCons">
+  <constructor-arg name="name" value="sheik shabaz"/>
+  <constructor-arg name="id" value="1234"/>
+  </bean>
+ 
+ <bean id="Emp2" class="com.evo.Employee_Cons.EmployeeCons">
+  <constructor-arg name="name" value="sheik shabaz hussain"/>
+  <constructor-arg name="id" value="12345"/>
+  </bean>
+    </beans>
